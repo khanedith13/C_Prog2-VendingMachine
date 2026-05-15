@@ -168,9 +168,14 @@ This project demonstrates:
 This project was developed by:
 
 - Student 1 : intphilip | Philip II Mendoza
+      https://github.com/intphilip
+    
 - Student 2 : jimbert0609 | Jimbert Catalan
+      https://github.com/Jimbert0609
+  
 - Student 3 : khanedith13 | Delfin Octobre
-
+      https://github.com/khanedith13
+  
 ---
 
 # Course Information
