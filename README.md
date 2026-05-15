@@ -72,3 +72,27 @@ VendingMachine/
 6. Inventory and stock are saved using file handling
 
 ---
+
+# Sample Products
+
+| Product | Price | Stock |
+|---|---|---|
+| Chips | ₱25 | 10 |
+| Soda | ₱30 | 8 |
+| Candy | ₱15 | 12 |
+| Water | ₱20 | 15 |
+| Juice | ₱35 | 6 |
+
+---
+
+# Sample Menu
+
+```txt
+===== VENDING MACHINE =====
+1. View Products
+2. Buy Product
+3. View Inventory
+4. Exit
+```
+
+---
