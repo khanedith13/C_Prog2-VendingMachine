@@ -16,3 +16,19 @@ The system stores and updates:
 using text files through file handling in C.
 
 ---
+
+# Features
+
+- View available vending machine products
+- Buy products with balance validation
+- Stock quantity checking
+- Inventory tracking
+- Remaining balance tracking
+- File handling for persistent data storage
+- Console-based menu system
+- Uses only standard C libraries:
+  - `stdio.h`
+  - `stdlib.h`
+  - `string.h`
+
+---
