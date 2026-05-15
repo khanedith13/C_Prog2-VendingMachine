@@ -132,3 +132,21 @@ Juice 0
 ```
 
 ---
+
+# Compilation and Execution
+
+## Using GCC
+
+### Linux / macOS
+```bash
+gcc vending_machine.c -o vending
+./vending
+```
+
+### Windows
+```bash
+gcc vending_machine.c -o vending.exe
+vending.exe
+```
+
+---
