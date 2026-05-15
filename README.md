@@ -57,3 +57,18 @@ VendingMachine/
 ```
 
 ---
+
+# How the Program Works
+
+1. The program loads product data from `products.txt`
+2. The student starts with ₱500 balance
+3. The user chooses actions from the menu:
+   - View Products
+   - Buy Product
+   - View Inventory
+   - Exit
+4. Purchased products reduce stock quantity
+5. Student balance updates automatically
+6. Inventory and stock are saved using file handling
+
+---
