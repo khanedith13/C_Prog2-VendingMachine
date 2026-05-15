@@ -115,3 +115,20 @@ Juice 35 6
 ```
 
 ---
+
+## inventory.txt
+Stores:
+- Remaining student money
+- Purchased product quantities
+
+Example:
+```txt
+500
+Chips 0
+Soda 0
+Candy 0
+Water 0
+Juice 0
+```
+
+---
