@@ -150,3 +150,16 @@ vending.exe
 ```
 
 ---
+
+# Learning Objectives
+
+This project demonstrates:
+- Flow control in C
+- Functions and modular programming
+- Arrays and strings
+- Structures
+- File handling
+- Inventory management logic
+- Console-based user interaction
+
+---
