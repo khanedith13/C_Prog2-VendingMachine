@@ -32,3 +32,15 @@ using text files through file handling in C.
   - `string.h`
 
 ---
+
+# Technologies Used
+
+- C Programming Language
+- File Handling
+- Structures
+- Arrays
+- Functions
+- Conditional Statements
+- Loops
+
+---
