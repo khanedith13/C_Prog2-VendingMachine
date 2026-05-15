@@ -163,3 +163,12 @@ This project demonstrates:
 - Console-based user interaction
 
 ---
+# Developers
+
+This project was developed by:
+
+- Student 1 : intphilip | Philip II Mendoza
+- Student 2 : jimbert0609 | Jimbert Catalan
+- Student 3 : khanedith13 | Delfin Octobre
+
+---
