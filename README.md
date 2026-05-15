@@ -44,3 +44,16 @@ using text files through file handling in C.
 - Loops
 
 ---
+
+# Project Structure
+
+```txt
+VendingMachine/
+│
+├── vending_machine.c
+├── products.txt
+├── inventory.txt
+└── README.md
+```
+
+---
