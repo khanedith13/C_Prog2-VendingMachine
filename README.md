@@ -96,3 +96,22 @@ VendingMachine/
 ```
 
 ---
+
+# File Handling
+
+## products.txt
+Stores product information:
+- Product name
+- Price
+- Stock quantity
+
+Example:
+```txt
+Chips 25 10
+Soda 30 8
+Candy 15 12
+Water 20 15
+Juice 35 6
+```
+
+---
