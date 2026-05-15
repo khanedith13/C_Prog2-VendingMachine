@@ -172,3 +172,17 @@ This project was developed by:
 - Student 3 : khanedith13 | Delfin Octobre
 
 ---
+
+# Course Information
+
+**Course:** Programming 2  
+**Project:** Final Project – Vending Machine Simulation  
+**Language:** C Programming
+
+---
+
+# Notes
+
+- The program uses only standard C libraries.
+- Data is saved automatically using text files.
+- Compatible with basic C compilers and environments.
