@@ -48,12 +48,12 @@ using text files through file handling in C.
 # Project Structure
 
 ```txt
-VendingMachine/
+C_Prog2-VendingMachine/
 │
-├── vending_machine.c
-├── products.txt
+├── README.md
 ├── inventory.txt
-└── README.md
+├── products.txt
+└── vendingMachine.c
 ```
 
 ---
