@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="LDXPkpqlQSU5lzgCQPFJ" name="Page-1">
-        <mxGraphModel dx="1134" dy="646" grid="1" gridSize="15" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0" adaptiveColors="simple">
+        <mxGraphModel dx="4317" dy="2086" grid="1" gridSize="15" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0" adaptiveColors="simple">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -95,23 +95,20 @@
                 <mxCell id="540" value="" style="edgeStyle=none;html=1;entryX=0.839;entryY=0.061;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="500" target="512" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="500" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;process the store choice&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;get store stock from products.txt&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+                <mxCell id="500" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;process the store choice&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;get store stocks from products.txt&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
                     <mxGeometry x="-160" y="720" width="190" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="541" value="" style="edgeStyle=none;html=1;" parent="1" source="512" target="515" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="512" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;display store1 stocks:&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;product id, name, price and stocks&lt;/font&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="-337.5" y="825" width="180" height="90" as="geometry"/>
+                    <mxGeometry x="-380" y="825" width="180" height="90" as="geometry"/>
                 </mxCell>
                 <mxCell id="542" value="" style="edgeStyle=none;html=1;" parent="1" source="515" target="516" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="515" value="select product id" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
-                    <mxGeometry x="-317.5" y="960" width="140" height="45" as="geometry"/>
-                </mxCell>
-                <mxCell id="543" value="" style="edgeStyle=none;html=1;" parent="1" source="518" target="522" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry x="-360" y="960" width="140" height="45" as="geometry"/>
                 </mxCell>
                 <mxCell id="545" value="" style="edgeStyle=none;html=1;" parent="1" source="516" target="518" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -120,109 +117,69 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="516" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;product id&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;font style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;&amp;gt;= 1 &amp;amp;&amp;amp; &amp;lt;= 5&lt;/font&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="-300" y="1035" width="105" height="105" as="geometry"/>
+                    <mxGeometry x="-342.5" y="1035" width="105" height="105" as="geometry"/>
                 </mxCell>
-                <mxCell id="547" value="" style="edgeStyle=none;html=1;" parent="1" source="519" target="520" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="547" value="" style="edgeStyle=none;html=1;" parent="1" source="519" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-430" y="1016.25" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="519" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;no&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
-                    <mxGeometry x="-417.5" y="1072.5" width="60" height="30" as="geometry"/>
+                    <mxGeometry x="-460" y="1072.5" width="60" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="520" value="invalid product choice" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="-437.5" y="948.75" width="100" height="67.5" as="geometry"/>
-                </mxCell>
-                <mxCell id="549" value="" style="edgeStyle=none;html=1;" parent="1" source="522" target="523" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="522" value="&lt;span&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;add to inventory.txt&lt;/font&gt;&lt;/span&gt;&lt;div style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;font style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;update stocks in products.txt&lt;br style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;/font&gt;&lt;div style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;deduct cash based on price&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="-337.5" y="1230" width="180" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="550" value="" style="edgeStyle=none;html=1;" parent="1" source="523" target="527" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="523" value="display buy more or not" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="-325" y="1320" width="155" height="75" as="geometry"/>
-                </mxCell>
-                <mxCell id="555" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="524" target="525" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="562" value="" style="edgeStyle=none;html=1;" parent="1" source="524" target="526" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="524" value="y / n" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="-287.5" y="1485" width="80" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="556" value="" style="edgeStyle=none;html=1;entryX=0.2;entryY=0.14;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="525" target="535" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="525" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;no&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
-                    <mxGeometry x="-277.5" y="1590" width="60" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="563" value="" style="edgeStyle=none;html=1;" parent="1" source="526" target="561" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="526" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
-                    <mxGeometry x="-417.5" y="1510" width="60" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="551" value="" style="edgeStyle=none;html=1;" parent="1" source="527" target="524" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="527" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;input y / n&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-                    <mxGeometry x="-307.5" y="1425" width="120" height="30" as="geometry"/>
+                    <mxGeometry x="-480" y="948.75" width="100" height="67.5" as="geometry"/>
                 </mxCell>
                 <mxCell id="559" value="" style="edgeStyle=none;html=1;" parent="1" source="528" target="534" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="528" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;cancel product or deduct product quantity&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;update inventory.txt&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;change = cash - (sum of all products price)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;update stocks in products.txt&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="-187.5" y="2055" width="245" height="60" as="geometry"/>
+                    <mxGeometry x="-231.25" y="2325" width="245" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="560" value="" style="edgeStyle=none;html=1;" parent="1" source="534" target="539" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="534" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;display reciept&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;and change&lt;/font&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="-122.5" y="2160" width="115" height="75" as="geometry"/>
+                    <mxGeometry x="-166.25" y="2430" width="115" height="75" as="geometry"/>
                 </mxCell>
                 <mxCell id="557" value="" style="edgeStyle=none;html=1;" parent="1" source="535" target="536" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="535" value="display temporary receipt" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="-128.5" y="1710" width="127" height="90" as="geometry"/>
+                    <mxGeometry x="-172.25" y="1980" width="127" height="90" as="geometry"/>
                 </mxCell>
                 <mxCell id="565" value="" style="edgeStyle=none;html=1;" parent="1" source="536" target="564" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="536" value="select product number&amp;nbsp; to deduct quantity or cancel" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="-211.25" y="1845" width="292.5" height="60" as="geometry"/>
+                    <mxGeometry x="-255" y="2115" width="292.5" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="539" value="END" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.start" parent="1" vertex="1">
-                    <mxGeometry x="-105" y="2280" width="80" height="30" as="geometry"/>
+                    <mxGeometry x="-148.75" y="2550" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="779" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="518" target="738">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="518" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
-                    <mxGeometry x="-277.5" y="1170" width="60" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="561" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.or;" parent="1" vertex="1">
-                    <mxGeometry x="-467.5" y="1517.5" width="15" height="15" as="geometry"/>
+                    <mxGeometry x="-320" y="1170" width="60" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="566" value="" style="edgeStyle=none;html=1;" parent="1" source="564" target="528" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="564" value="input product number" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
-                    <mxGeometry x="-166.25" y="1935" width="202.5" height="60" as="geometry"/>
+                    <mxGeometry x="-210" y="2205" width="202.5" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="567" value="" style="edgeStyle=none;html=1;" parent="1" source="568" target="570" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="568" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;display store1 stocks:&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;product id, name, price and stocks&lt;/font&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="67.5" y="825" width="180" height="90" as="geometry"/>
+                    <mxGeometry x="32.5" y="825" width="180" height="90" as="geometry"/>
                 </mxCell>
                 <mxCell id="569" value="" style="edgeStyle=none;html=1;" parent="1" source="570" target="574" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="570" value="select product id" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
-                    <mxGeometry x="87.5" y="960" width="140" height="45" as="geometry"/>
-                </mxCell>
-                <mxCell id="571" value="" style="edgeStyle=none;html=1;" parent="1" source="591" target="580" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry x="52.5" y="960" width="140" height="45" as="geometry"/>
                 </mxCell>
                 <mxCell id="572" value="" style="edgeStyle=none;html=1;" parent="1" source="574" target="591" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -231,58 +188,22 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="574" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;product id&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;font style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;&amp;gt;= 1 &amp;amp;&amp;amp; &amp;lt;= 5&lt;/font&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="105" y="1035" width="105" height="105" as="geometry"/>
+                    <mxGeometry x="70" y="1035" width="105" height="105" as="geometry"/>
                 </mxCell>
                 <mxCell id="575" value="" style="edgeStyle=none;html=1;" parent="1" source="576" target="578" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="576" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;no&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
-                    <mxGeometry x="-12.5" y="1072.5" width="60" height="30" as="geometry"/>
+                    <mxGeometry x="-47.5" y="1072.5" width="60" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="578" value="invalid product choice" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="-32.5" y="948.75" width="100" height="67.5" as="geometry"/>
+                    <mxGeometry x="-67.5" y="948.75" width="100" height="67.5" as="geometry"/>
                 </mxCell>
-                <mxCell id="579" value="" style="edgeStyle=none;html=1;" parent="1" source="580" target="582" edge="1">
+                <mxCell id="778" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="591" target="709">
                     <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="580" value="&lt;span&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;add to inventory.txt&lt;/font&gt;&lt;/span&gt;&lt;div style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;font style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;update stocks in products.txt&lt;br style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;/font&gt;&lt;div style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;deduct cash based on price&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="67.5" y="1230" width="180" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="581" value="" style="edgeStyle=none;html=1;" parent="1" source="582" target="590" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="582" value="display buy more or not" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="80" y="1320" width="155" height="75" as="geometry"/>
-                </mxCell>
-                <mxCell id="583" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="585" target="586" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="584" value="" style="edgeStyle=none;html=1;" parent="1" source="585" target="588" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="585" value="y / n" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="117.5" y="1485" width="80" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="586" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;no&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
-                    <mxGeometry x="127.5" y="1590" width="60" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="587" value="" style="edgeStyle=none;html=1;" parent="1" source="588" target="592" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="588" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
-                    <mxGeometry x="-12.5" y="1510" width="60" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="589" value="" style="edgeStyle=none;html=1;" parent="1" source="590" target="585" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="590" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;input y / n&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-                    <mxGeometry x="97.5" y="1425" width="120" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="591" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
-                    <mxGeometry x="127.5" y="1170" width="60" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="592" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.or;" parent="1" vertex="1">
-                    <mxGeometry x="-62.5" y="1517.5" width="15" height="15" as="geometry"/>
+                    <mxGeometry x="92.5" y="1170" width="60" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="593" value="" style="edgeStyle=none;html=1;" parent="1" source="594" target="596" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -295,9 +216,6 @@
                 </mxCell>
                 <mxCell id="596" value="select product id" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
                     <mxGeometry x="507.5" y="960" width="140" height="45" as="geometry"/>
-                </mxCell>
-                <mxCell id="597" value="" style="edgeStyle=none;html=1;" parent="1" source="617" target="606" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="598" value="" style="edgeStyle=none;html=1;" parent="1" source="600" target="617" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -320,14 +238,14 @@
                 <mxCell id="605" value="" style="edgeStyle=none;html=1;" parent="1" source="606" target="608" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="606" value="&lt;span&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;add to inventory.txt&lt;/font&gt;&lt;/span&gt;&lt;div style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;font style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;update stocks in products.txt&lt;br style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;/font&gt;&lt;div style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;deduct cash based on price&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="487.5" y="1230" width="180" height="60" as="geometry"/>
+                <mxCell id="606" value="&lt;span&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;add to inventory.txt&lt;/font&gt;&lt;/span&gt;&lt;div style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;font style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;deduct and update stocks in products.txt&lt;br style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;/font&gt;&lt;div style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;deduct cash based on price&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="461.25" y="1485" width="232.5" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="607" value="" style="edgeStyle=none;html=1;" parent="1" source="608" target="616" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="608" value="display buy more or not" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="500" y="1320" width="155" height="75" as="geometry"/>
+                    <mxGeometry x="500" y="1575" width="155" height="75" as="geometry"/>
                 </mxCell>
                 <mxCell id="609" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="611" target="612" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -336,47 +254,47 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="611" value="y / n" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="537.5" y="1485" width="80" height="80" as="geometry"/>
+                    <mxGeometry x="537.5" y="1740" width="80" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="612" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;no&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
-                    <mxGeometry x="547.5" y="1590" width="60" height="30" as="geometry"/>
+                    <mxGeometry x="547.5" y="1845" width="60" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="613" value="" style="edgeStyle=none;html=1;" parent="1" source="614" target="618" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="614" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
-                    <mxGeometry x="407.5" y="1510" width="60" height="30" as="geometry"/>
+                    <mxGeometry x="407.5" y="1765" width="60" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="615" value="" style="edgeStyle=none;html=1;" parent="1" source="616" target="611" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="616" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;input y / n&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-                    <mxGeometry x="517.5" y="1425" width="120" height="30" as="geometry"/>
+                    <mxGeometry x="517.5" y="1680" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="677" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="617" target="669">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="617" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
                     <mxGeometry x="547.5" y="1170" width="60" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="618" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.or;" parent="1" vertex="1">
-                    <mxGeometry x="357.5" y="1517.5" width="15" height="15" as="geometry"/>
+                    <mxGeometry x="357.5" y="1772.5" width="15" height="15" as="geometry"/>
                 </mxCell>
                 <mxCell id="620" value="" style="edgeStyle=none;html=1;" parent="1" source="621" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-577.5000000000002" y="960" as="targetPoint"/>
+                        <mxPoint x="-717.5000000000002" y="960" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="621" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;display store1 stocks:&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;product id, name, price and stocks&lt;/font&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="-667.5" y="825" width="180" height="90" as="geometry"/>
+                    <mxGeometry x="-807.5" y="825" width="180" height="90" as="geometry"/>
                 </mxCell>
                 <mxCell id="622" value="" style="edgeStyle=none;html=1;" parent="1" target="627" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-577.5000000000002" y="1005" as="sourcePoint"/>
+                        <mxPoint x="-717.5000000000002" y="1005" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="623" value="select product id" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
-                    <mxGeometry x="-647.5" y="960" width="140" height="45" as="geometry"/>
-                </mxCell>
-                <mxCell id="624" value="" style="edgeStyle=none;html=1;" parent="1" source="644" target="633" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry x="-787.5" y="960" width="140" height="45" as="geometry"/>
                 </mxCell>
                 <mxCell id="625" value="" style="edgeStyle=none;html=1;" parent="1" source="627" target="644" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -385,64 +303,22 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="627" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;product id&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;font style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;&amp;gt;= 1 &amp;amp;&amp;amp; &amp;lt;= 5&lt;/font&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="-630" y="1035" width="105" height="105" as="geometry"/>
+                    <mxGeometry x="-770" y="1035" width="105" height="105" as="geometry"/>
                 </mxCell>
                 <mxCell id="628" value="" style="edgeStyle=none;html=1;" parent="1" source="629" target="631" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="629" value="no" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
-                    <mxGeometry x="-747.5" y="1072.5" width="60" height="30" as="geometry"/>
+                    <mxGeometry x="-887.5" y="1072.5" width="60" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="631" value="invalid product choice" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="-767.5" y="948.75" width="100" height="67.5" as="geometry"/>
+                    <mxGeometry x="-907.5" y="948.75" width="100" height="67.5" as="geometry"/>
                 </mxCell>
-                <mxCell id="632" value="" style="edgeStyle=none;html=1;" parent="1" source="633" target="635" edge="1">
+                <mxCell id="780" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="644" target="767">
                     <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="633" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;add to inventory.txt&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;update stocks in products.txt&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;deduct cash based on price&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="-667.5" y="1230" width="180" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="634" value="" style="edgeStyle=none;html=1;" parent="1" source="635" target="643" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="635" value="display buy more or not" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="-655" y="1320" width="155" height="75" as="geometry"/>
-                </mxCell>
-                <mxCell id="636" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="638" target="639" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="637" value="" style="edgeStyle=none;html=1;" parent="1" source="638" target="641" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="638" value="y / n" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="-617.5" y="1485" width="80" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="639" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;no&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
-                    <mxGeometry x="-607.5" y="1590" width="60" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="640" value="" style="edgeStyle=none;html=1;" parent="1" source="641" target="645" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="641" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
-                    <mxGeometry x="-747.5" y="1510" width="60" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="642" value="" style="edgeStyle=none;html=1;" parent="1" source="643" target="638" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="643" value="input y / n" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-                    <mxGeometry x="-637.5" y="1425" width="120" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="644" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
-                    <mxGeometry x="-607.5" y="1170" width="60" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="645" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.or;" parent="1" vertex="1">
-                    <mxGeometry x="-797.5" y="1517.5" width="15" height="15" as="geometry"/>
-                </mxCell>
-                <mxCell id="647" style="edgeStyle=none;html=1;entryX=0.885;entryY=0.13;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="586" target="535" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="648" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="639" target="535" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry x="-747.5" y="1170" width="60" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="649" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="612" target="535" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -465,25 +341,25 @@
                 <mxCell id="660" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="631" target="621" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="-717" y="870"/>
+                            <mxPoint x="-857" y="870"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="661" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-387.5" y="948.75" as="sourcePoint"/>
-                        <mxPoint x="-337.5" y="869.75" as="targetPoint"/>
+                        <mxPoint x="-430" y="948.75" as="sourcePoint"/>
+                        <mxPoint x="-380" y="869.75" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="-387.5" y="869.75"/>
+                            <mxPoint x="-430" y="869.75"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="662" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="17.5" y="948.75" as="sourcePoint"/>
-                        <mxPoint x="67.5" y="869.75" as="targetPoint"/>
+                        <mxPoint x="-17.5" y="948.75" as="sourcePoint"/>
+                        <mxPoint x="32.5" y="869.75" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="17.5" y="869.75"/>
+                            <mxPoint x="-17.5" y="869.75"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
@@ -495,6 +371,328 @@
                             <mxPoint x="437.5" y="869.75"/>
                         </Array>
                     </mxGeometry>
+                </mxCell>
+                <mxCell id="679" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="668" target="670">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="685" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="668" target="671">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="688" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="668" target="675">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="668" value="quantity&lt;div&gt;&amp;gt;=1 &amp;amp;&amp;amp; &amp;lt;= stock&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="516.25" y="1310" width="122.5" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="678" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="669" target="668">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="669" value="input quantity" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="517.5" y="1237.5" width="120" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="683" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="670" target="606">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="670" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="547.5" y="1425" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="686" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="671" target="672">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="671" value="&lt;font color=&quot;#000000&quot;&gt;&amp;lt;1&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="417.5" y="1342.5" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="687" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="672" target="669">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="672" value="invalid" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="407.5" y="1237.5" width="80" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="689" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="675" target="676">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="675" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;&amp;gt;stock&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="675" y="1342.5" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="690" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="676" target="669">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="676" value="not enough stocks" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="665" y="1237.5" width="80" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="691" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="692" target="694">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="692" value="&lt;span&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;add to inventory.txt&lt;/font&gt;&lt;/span&gt;&lt;div style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;font style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;deduct and update stocks in products.txt&lt;br style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;/font&gt;&lt;div style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;deduct cash based on price&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="8.75" y="1485" width="232.5" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="693" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="694" target="702">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="694" value="display buy more or not" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="47.5" y="1575" width="155" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="695" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="697" target="698">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="696" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="697" target="700">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="697" value="y / n" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="85" y="1740" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="698" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;no&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="95" y="1845" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="699" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="700" target="703">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="700" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="-45" y="1765" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="701" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="702" target="697">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="702" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;input y / n&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="65" y="1680" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="703" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.or;" vertex="1" parent="1">
+                    <mxGeometry x="-95" y="1772.5" width="15" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="704" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="707" target="711">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="705" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="707" target="713">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="706" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="707" target="717">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="707" value="quantity&lt;div&gt;&amp;gt;=1 &amp;amp;&amp;amp; &amp;lt;= stock&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="63.75" y="1310" width="122.5" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="708" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="709" target="707">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="709" value="input quantity" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="65" y="1237.5" width="120" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="710" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="711" target="692">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="711" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="95" y="1425" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="712" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="713" target="715">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="713" value="&lt;font color=&quot;#000000&quot;&gt;&amp;lt;1&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="-35" y="1342.5" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="714" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="715" target="709">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="715" value="invalid" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="-45" y="1237.5" width="80" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="716" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="717" target="719">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="717" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;&amp;gt;stock&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="222.5" y="1342.5" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="718" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="719" target="709">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="719" value="not enough stocks" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="212.5" y="1237.5" width="80" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="720" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="721" target="723">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="721" value="&lt;span&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;add to inventory.txt&lt;/font&gt;&lt;/span&gt;&lt;div style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;font style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;deduct and update stocks in products.txt&lt;br style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;/font&gt;&lt;div style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;deduct cash based on price&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-403.75" y="1477.5" width="232.5" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="722" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="723" target="731">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="723" value="display buy more or not" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="-365" y="1567.5" width="155" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="724" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="726" target="727">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="725" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="726" target="729">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="726" value="y / n" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-327.5" y="1732.5" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="783" style="edgeStyle=none;html=1;" edge="1" parent="1" source="727" target="535">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-255" y="1935" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="727" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;no&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="-317.5" y="1837.5" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="728" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="729" target="732">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="729" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="-457.5" y="1757.5" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="730" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="731" target="726">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="731" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;input y / n&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="-347.5" y="1672.5" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="732" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.or;" vertex="1" parent="1">
+                    <mxGeometry x="-507.5" y="1765" width="15" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="733" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="736" target="740">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="734" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="736" target="742">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="735" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="736" target="746">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="736" value="quantity&lt;div&gt;&amp;gt;=1 &amp;amp;&amp;amp; &amp;lt;= stock&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-348.75" y="1302.5" width="122.5" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="737" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="738" target="736">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="738" value="input quantity" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="-347.5" y="1230" width="120" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="739" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="740" target="721">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="740" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="-317.5" y="1417.5" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="741" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="742" target="744">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="742" value="&lt;font color=&quot;#000000&quot;&gt;&amp;lt;1&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="-447.5" y="1335" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="743" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="744" target="738">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="744" value="invalid" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="-457.5" y="1230" width="80" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="745" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="746" target="748">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="746" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;&amp;gt;stock&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="-190" y="1335" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="747" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="748" target="738">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="748" value="not enough stocks" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="-200" y="1230" width="80" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="749" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="750" target="752">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="750" value="&lt;span&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;add to inventory.txt&lt;/font&gt;&lt;/span&gt;&lt;div style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;font style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;deduct and update stocks in products.txt&lt;br style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;/font&gt;&lt;div style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;deduct cash based on price&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-831.25" y="1485" width="232.5" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="751" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="752" target="760">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="752" value="display buy more or not" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="-792.5" y="1575" width="155" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="753" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="755" target="756">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="754" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="755" target="758">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="755" value="y / n" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-755" y="1740" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="784" style="edgeStyle=none;html=1;entryX=0.058;entryY=0.372;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="756" target="535">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-660" y="1920" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="756" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;no&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="-745" y="1845" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="757" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="758" target="761">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="758" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="-885" y="1765" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="759" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="760" target="755">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="760" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;input y / n&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="-775" y="1680" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="761" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.or;" vertex="1" parent="1">
+                    <mxGeometry x="-935" y="1772.5" width="15" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="762" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="765" target="769">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="763" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="765" target="771">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="764" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="765" target="775">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="765" value="quantity&lt;div&gt;&amp;gt;=1 &amp;amp;&amp;amp; &amp;lt;= stock&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-776.25" y="1310" width="122.5" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="766" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="767" target="765">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="767" value="input quantity" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="-775" y="1237.5" width="120" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="768" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="769" target="750">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="769" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="-745" y="1425" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="770" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="771" target="773">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="771" value="&lt;font color=&quot;#000000&quot;&gt;&amp;lt;1&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="-875" y="1342.5" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="772" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="773" target="767">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="773" value="invalid" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="-885" y="1237.5" width="80" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="774" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="775" target="777">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="775" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;&amp;gt;stock&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="-617.5" y="1342.5" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="776" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="777" target="767">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="777" value="not enough stocks" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="-627.5" y="1237.5" width="80" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="781" style="edgeStyle=none;html=1;entryX=0.808;entryY=-0.009;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="698" target="535">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
