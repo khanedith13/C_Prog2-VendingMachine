@@ -51,6 +51,7 @@ using text files through file handling in C.
 C_Prog2-VendingMachine/
 │
 ├── README.md
+├── flowchart.drawio
 ├── inventory.txt
 ├── products.txt
 └── vendingMachine.c
