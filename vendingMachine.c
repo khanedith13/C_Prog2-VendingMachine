@@ -7,6 +7,13 @@
 #define MAX_CART 100
 #define MAX_INVENTORY_ITEMS 500
 
+typedef struct{
+  int id;
+  char name[50];
+  float price;
+  int stock;
+}Product;
+
 int main() {
 
 
