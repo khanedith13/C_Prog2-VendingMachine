@@ -47,6 +47,31 @@ void saveCash(float cash){
     fclose(fp);
 }
 
+// LOAD CASH
+float loadCash(){
+    FILE *fp;
+    float cash=500;
+    fp=fopen("cash.txt","r");
+
+    if(fp==NULL){
+        fp=fopen("cash.txt","w");
+        if(fp!=NULL){
+            fprintf(fp,"500");
+            fclose(fp);
+        }
+        return 500;
+    }
+
+    if(fscanf(fp,"%f",&cash)!=1){
+        fclose(fp);
+        saveCash(500);
+        return 500;
+    }
+
+    fclose(fp);
+    return cash;
+}
+
 int main() {
 
 
