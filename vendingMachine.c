@@ -14,6 +14,12 @@ typedef struct{
   int stock;
 }Product;
 
+typedef struct{
+    char storeName[50];
+    Product products[MAX_PRODUCTS];
+    int productCount;
+}Store;
+
 int main() {
 
 
