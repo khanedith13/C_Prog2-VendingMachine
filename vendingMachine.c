@@ -128,6 +128,15 @@ void saveProducts(Store stores[],int storeCount){
     fclose(fp);
 }
 
+// HELPER FUNCTION: Removes column spacing blank paddings left by formatted file printing
+void trimTrailingSpace(char *str) {
+    int len = strlen(str);
+    while (len > 0 && (str[len - 1] == ' ' || str[len - 1] == '\t' || str[len - 1] == '\r' || str[len - 1] == '\n')) {
+        str[len - 1] = '\0';
+        len--;
+    }
+}
+
 int main() {
 
 
