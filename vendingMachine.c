@@ -82,6 +82,29 @@ int findProduct(Store stores[],int storeIndex,int productID){
     return -1;
 }
 
+// DISPLAY PRODUCTS
+void displayProducts(Store stores[],int storeIndex){
+    printf("\n=====================================================================\n");
+    printf("                            %s\n",stores[storeIndex].storeName);
+    printf("=====================================================================\n");
+    printf("%-5s %-20s %-15s %-10s\n",
+            "ID",
+            "Product",
+            "Price",
+            "Stock");
+    printf("---------------------------------------------------------------------\n");
+
+    for(int i=0;i<stores[storeIndex].productCount;i++){
+        printf("%-5d %-20.20s PHP %-10.2f %-10d\n",
+                stores[storeIndex].products[i].id,
+                stores[storeIndex].products[i].name,
+                stores[storeIndex].products[i].price,
+                stores[storeIndex].products[i].stock);
+    }
+    printf("=====================================================================\n");
+    printf("\nEnter 0 To Go Back\n");
+}
+
 int main() {
 
 
