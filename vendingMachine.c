@@ -20,6 +20,22 @@ typedef struct{
     int productCount;
 }Store;
 
+typedef struct{
+    char storeName[50];
+    char productName[50];
+    int productID;
+    int quantity;
+    float price;
+    float total;
+}Cart;
+
+typedef struct {
+    char storeName[50];
+    char productName[50];
+    int quantity;
+    float total;
+}InventoryItem;
+
 int main() {
 
 
