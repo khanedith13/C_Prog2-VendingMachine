@@ -105,6 +105,29 @@ void displayProducts(Store stores[],int storeIndex){
     printf("\nEnter 0 To Go Back\n");
 }
 
+// SAVE PRODUCTS
+void saveProducts(Store stores[],int storeCount){
+    FILE *fp=fopen("products.txt","w");
+
+    if(fp==NULL){
+        printf("\nError Saving Products!\n");
+        return;
+    }
+
+    for(int i=0;i<storeCount;i++){
+        fprintf(fp,"===== %s =====\n",stores[i].storeName);
+        for(int j=0;j<stores[i].productCount;j++){
+            fprintf(fp,"%d | %s | PHP %.2f | Stock: %d\n",
+                    stores[i].products[j].id,
+                    stores[i].products[j].name,
+                    stores[i].products[j].price,
+                    stores[i].products[j].stock);
+        }
+        fprintf(fp,"\n");
+    }
+    fclose(fp);
+}
+
 int main() {
 
 
