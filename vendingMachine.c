@@ -36,6 +36,17 @@ typedef struct {
     float total;
 }InventoryItem;
 
+// SAVE CASH
+void saveCash(float cash){
+    FILE *fp=fopen("cash.txt","w");
+    if(fp==NULL){
+        printf("\nError Saving Cash!\n");
+        return;
+    }
+    fprintf(fp,"%.2f",cash);
+    fclose(fp);
+}
+
 int main() {
 
 
