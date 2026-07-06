@@ -72,6 +72,16 @@ float loadCash(){
     return cash;
 }
 
+// FIND PRODUCT
+int findProduct(Store stores[],int storeIndex,int productID){
+    for(int i=0;i<stores[storeIndex].productCount;i++){
+        if(stores[storeIndex].products[i].id==productID){
+            return i;
+        }
+    }
+    return -1;
+}
+
 int main() {
 
 
