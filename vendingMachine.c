@@ -137,6 +137,57 @@ void trimTrailingSpace(char *str) {
     }
 }
 
+// RUNTIME LOADING: Parses inventory.txt fresh from disk to capture all external manual modifications
+int runtimeLoadInventoryFile(InventoryItem items[]) {
+    int itemCount = 0;
+    FILE *fp = fopen("inventory.txt", "r");
+    if (fp == NULL) return 0; // If file is missing or cleared entirely, returns 0 entries
+
+    char line[250];
+    int dataSection = 0;
+
+    while (fgets(line, sizeof(line), fp)) {
+        // CHANGED: Parsed files now identify the data block via the updated "INVENTORY" header string
+        if (strstr(line, "INVENTORY") || strstr(line, "No.   Product")) {
+            dataSection = 1;
+            continue;
+        }
+        if (strstr(line, "Starting Cash:") || strstr(line, "Change:") || strstr(line, "=======")) {
+            if (strstr(line, "Starting Cash:") || strstr(line, "Change:")) {
+                dataSection = 0;
+            }
+            continue;
+        }
+
+        if (dataSection && strlen(line) > 10) {
+            int no;
+            char prod[50], store[50];
+            int qty;
+            float total;
+
+            if (sscanf(line, "%d", &no) == 1) {
+                snprintf(prod, 21, "%s", line + 6);
+                snprintf(store, 21, "%s", line + 27);
+                trimTrailingSpace(prod);
+                trimTrailingSpace(store);
+
+                char *cashPtr = strstr(line, "PHP");
+                if (cashPtr != NULL && sscanf(cashPtr, "PHP %f", &total) == 1 && sscanf(line + 48, "%d", &qty) == 1) {
+                    if (itemCount < MAX_INVENTORY_ITEMS) {
+                        strcpy(items[itemCount].productName, prod);
+                        strcpy(items[itemCount].storeName, store);
+                        items[itemCount].quantity = qty;
+                        items[itemCount].total = total;
+                        itemCount++;
+                    }
+                }
+            }
+        }
+    }
+    fclose(fp);
+    return itemCount;
+}
+
 int main() {
 
 
