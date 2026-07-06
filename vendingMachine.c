@@ -188,6 +188,70 @@ int runtimeLoadInventoryFile(InventoryItem items[]) {
     return itemCount;
 }
 
+// INSTANT SINGLE ITEM RUNTIME UPDATE: Combines external text file state with immediate choices
+void mergeAndCommitProductToInventoryFile(char* store, char* product, int qty, float total, float startingCash, float change) {
+    InventoryItem items[MAX_INVENTORY_ITEMS];
+    
+    // Step 1: Read whatever is written on the file right now (even if manually changed mid-transaction)
+    int itemCount = runtimeLoadInventoryFile(items);
+
+    // Step 2: Search and merge this specific target transaction purchase
+    int duplicateIndex = -1;
+    for (int j = 0; j < itemCount; j++) {
+        if (strcmp(items[j].productName, product) == 0 &&
+            strcmp(items[j].storeName, store) == 0) {
+            duplicateIndex = j;
+            break;
+        }
+    }
+
+    if (duplicateIndex != -1) {
+        items[duplicateIndex].quantity += qty;
+        items[duplicateIndex].total += total;
+        // Clean up if a cancellation hits absolute zero tracking thresholds
+        if(items[duplicateIndex].quantity <= 0) {
+            for(int k = duplicateIndex; k < itemCount - 1; k++) {
+                items[k] = items[k+1];
+            }
+            itemCount--;
+        }
+    } else if (qty > 0) {
+        if (itemCount < MAX_INVENTORY_ITEMS) {
+            strcpy(items[itemCount].productName, product);
+            strcpy(items[itemCount].storeName, store);
+            items[itemCount].quantity = qty;
+            items[itemCount].total = total;
+            itemCount++;
+        }
+    }
+
+    // Step 3: Completely output the unified tables back into storage text files
+    FILE *fp = fopen("inventory.txt", "w");
+    if (fp == NULL) return;
+
+    fprintf(fp, "\n=====================================================================\n");
+    // CHANGED: Overwritten files now use the updated header label
+    fprintf(fp, "                            INVENTORY\n"); 
+    fprintf(fp, "=====================================================================\n");
+    fprintf(fp, "%-5s %-20s %-20s %-10s %-10s\n", "No.", "Product", "Store", "Qty", "Total");
+    fprintf(fp, "---------------------------------------------------------------------\n");
+
+    for (int i = 0; i < itemCount; i++) {
+        fprintf(fp, "%-5d %-20.20s %-20.20s %-10d PHP %-10.2f\n",
+                i + 1,
+                items[i].productName,
+                items[i].storeName,
+                items[i].quantity,
+                items[i].total);
+    }
+
+    fprintf(fp, "=====================================================================\n");
+    fprintf(fp, "%-20s PHP %.2f\n", "Starting Cash:", startingCash);
+    fprintf(fp, "%-20s PHP %.2f\n", "Change:", change);
+    fprintf(fp, "=====================================================================\n");
+    fclose(fp);
+}
+
 int main() {
 
 
