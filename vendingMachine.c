@@ -582,5 +582,22 @@ int main() {
         }
     }while(again=='y' || again=='Y');
 
+    if(again == 'n' || again == 'N') {
+        goto SHOPPING;
+    }
+
+    if(cartSize==0){
+        printf("\nNo Products Purchased!\n");
+        return 0;
+    }
+
+    if(cancelAgain == 'n') {
+        goto RECEIPT;
+    }
+
+    PAYMENT:
+    system("cls");
+
+
     return 0;  
 }
