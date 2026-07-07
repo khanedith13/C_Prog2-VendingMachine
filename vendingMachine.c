@@ -8,10 +8,10 @@
 #define MAX_INVENTORY_ITEMS 500
 
 typedef struct{
-  int id;
-  char name[50];
-  float price;
-  int stock;
+    int id;
+    char name[50];
+    float price;
+    int stock;
 }Product;
 
 typedef struct{
@@ -308,7 +308,7 @@ void reloadProducts(Store stores[],int *storeCount){
     fclose(fp);
 }
 
-int main() {
+int main(){
     Store stores[MAX_STORES];
     int storeCount=0;
 
@@ -332,7 +332,7 @@ int main() {
     system("cls");
     
     reloadProducts(stores,&storeCount);
-
+    
     do{
         int storeChoice;
         while(1){
