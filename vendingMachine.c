@@ -598,6 +598,150 @@ int main() {
     PAYMENT:
     system("cls");
 
+    do{
+        reloadProducts(stores,&storeCount);
+        cash=loadCash();
 
+        printf("=====================================================================\n");
+        printf("                         PRODUCTS PURCHASED\n");
+        printf("=====================================================================\n");
+        printf("%-5s %-20s %-20s %-10s %-10s\n",
+                "No.",
+                "Product",
+                "Store",
+                "Qty",
+                "Total");
+        printf("---------------------------------------------------------------------\n");
+
+        for(int i=0;i<cartSize;i++){
+            printf("%-5d %-20.20s %-20.20s %-10d PHP %-10.2f\n",
+                    i+1,
+                    cart[i].productName,
+                    cart[i].storeName,
+                    cart[i].quantity,
+                    cart[i].total);
+        }
+
+        printf("=====================================================================\n");
+        printf("TOTAL PURCHASED: PHP %.2f\n",finalTotal);
+        printf("=====================================================================\n");
+
+        int cancelChoice;
+        int cancelQuantity;
+
+        while(1){
+            printf("\nEnter Product Number To Cancel (0 to Return): ");
+            if(scanf("%d%c",&cancelChoice,&extra)!=2 || extra!='\n'){
+                while(getchar()!='\n');
+                printf("Invalid Input! Numbers Only.\n");
+                continue;
+            }
+            if(cancelChoice==0){
+                system("cls");
+                startingCash = cash; 
+                goto SHOPPING;
+            }
+            if(cancelChoice>=1 && cancelChoice<=cartSize){
+                break;
+            }
+            printf("Invalid Product Number!\n");
+        }
+
+        while(1){
+            printf("Enter Quantity To Cancel: ");
+            if(scanf("%d%c",&cancelQuantity,&extra)!=2 || extra!='\n'){
+                while(getchar()!='\n');
+                printf("Invalid Input! Numbers Only.\n");
+                continue;
+            }
+            if(cancelQuantity<=0 || cancelQuantity > cart[cancelChoice-1].quantity){
+                printf("Invalid Cancel Quantity!\n");
+                continue;
+            }
+            break;
+        }
+
+        float refund = cart[cancelChoice-1].price * cancelQuantity;
+        cash+=refund;
+        saveCash(cash);
+        finalTotal-=refund;
+
+        // Mirror deductions immediately in inventory.txt
+        mergeAndCommitProductToInventoryFile(cart[cancelChoice-1].storeName, 
+                                            cart[cancelChoice-1].productName, 
+                                            -cancelQuantity, 
+                                            -refund, 
+                                            startingCash, 
+                                            cash);
+
+        cart[cancelChoice-1].quantity-=cancelQuantity;
+        cart[cancelChoice-1].total-=refund;
+
+        for(int i=0; i<storeCount; i++){
+            if(strstr(stores[i].storeName, cart[cancelChoice-1].storeName) != NULL ||
+                strstr(cart[cancelChoice-1].storeName, stores[i].storeName) != NULL){
+        
+                int restoreIndex = findProduct(stores, i, cart[cancelChoice-1].productID);
+        
+                if(restoreIndex != -1){
+                    stores[i].products[restoreIndex].stock += cancelQuantity;
+        
+                    printf("\nReturned %d piece(s) of %s\n",
+                            cancelQuantity,
+                            stores[i].products[restoreIndex].name);
+        
+                    printf("Updated Stock: %d\n",
+                            stores[i].products[restoreIndex].stock);
+                }
+                break;
+            }
+        }
+        
+        saveProducts(stores,storeCount);
+
+        if(cart[cancelChoice-1].quantity==0){
+            for(int i=cancelChoice-1; i<cartSize-1; i++){
+                cart[i]=cart[i+1];
+            }
+            cartSize--;
+        }
+
+        printf("\nQuantity Cancelled Successfully!\n");
+        printf("Refund: PHP %.2f\n",refund);
+        printf("Updated Cash: PHP %.2f\n",cash);
+
+        if(cartSize==0){
+            system("cls");
+            printf("All Products Cancelled!\n");
+            printf("Remaining Cash: PHP %.2f\n",cash);
+            printf("\nReturning To Main Menu...\n");
+            again='y';
+            cancelAgain='n';
+            goto SHOPPING;
+        }
+
+        while(1){
+            printf("\nCancel More Products? (y/n): ");
+            if(scanf(" %c",&cancelAgain)!=1){
+                while(getchar()!='\n');
+                printf("Invalid Choice!\n");
+                continue;
+            }
+            while(getchar()!='\n');
+
+            if(cancelAgain=='y' || cancelAgain=='Y' || cancelAgain=='n' || cancelAgain=='N'){
+                break;
+            }
+            printf("Invalid Choice!\n");
+        }
+
+        system("cls");
+        if(cancelAgain=='n' || cancelAgain=='N'){
+            goto SHOPPING;
+        }
+
+    }while(cancelAgain=='y' || cancelAgain=='Y');
+
+    
     return 0;  
 }
