@@ -742,6 +742,34 @@ int main() {
 
     }while(cancelAgain=='y' || cancelAgain=='Y');
 
-    
-    return 0;  
+    RECEIPT:
+    system("cls");
+    printf("=====================================================================\n");
+    printf("                            FINAL RECEIPT\n");
+    printf("=====================================================================\n");
+    printf("%-5s %-20s %-20s %-10s %-10s\n",
+            "No.",
+            "Product",
+            "Store",
+            "Qty",
+            "Total");
+    printf("---------------------------------------------------------------------\n");
+
+    for(int i=0;i<cartSize;i++){
+        printf("%-5d %-20.20s %-20.20s %-10d PHP %-10.2f\n",
+                i+1,
+                cart[i].productName,
+                cart[i].storeName,
+                cart[i].quantity,
+                cart[i].total);
+    }
+
+    printf("=====================================================================\n");
+    printf("%-20s PHP %.2f\n", "TOTAL:", finalTotal);
+    printf("%-20s PHP %.2f\n", "CHANGE:", cash);
+    printf("=====================================================================\n");
+
+    printf("\nThank You For Using The Vending Machine!\n");
+
+    return 0;
 }
