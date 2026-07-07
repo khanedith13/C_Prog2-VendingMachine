@@ -309,7 +309,29 @@ void reloadProducts(Store stores[],int *storeCount){
 }
 
 int main() {
+    Store stores[MAX_STORES];
+    int storeCount=0;
 
+    reloadProducts(stores,&storeCount);
+
+    float cash=loadCash();
+    float startingCash;
+    char extra = '\0';
+
+    system("cls");
+    cash=loadCash();
+    startingCash=cash;
+    Cart cart[MAX_CART];
+    int cartSize=0;
+    float finalTotal=0;
+
+    char again='y';
+    char cancelAgain='n';
+
+    SHOPPING:
+    system("cls");
+    
+    reloadProducts(stores,&storeCount);
 
 
 
