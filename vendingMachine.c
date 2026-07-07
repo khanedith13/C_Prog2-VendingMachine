@@ -252,10 +252,66 @@ void mergeAndCommitProductToInventoryFile(char* store, char* product, int qty, f
     fclose(fp);
 }
 
+// RELOAD PRODUCTS
+void reloadProducts(Store stores[],int *storeCount){
+    FILE *fp=fopen("products.txt","r");
+
+    if(fp==NULL){
+        printf("\nproducts.txt not found!\n");
+        return;
+    }
+
+    *storeCount=0; 
+    char line[200];
+    int currentStore=-1;
+
+    while(fgets(line,sizeof(line),fp)){
+        line[strcspn(line,"\n")]='\0';
+
+        if(strlen(line)==0){
+            continue;
+        }
+
+        if(strstr(line,"=====")){
+            currentStore++;
+            (*storeCount)++;
+            stores[currentStore].productCount=0;
+            sscanf(line,
+                    "===== %[^=] =====",
+                    stores[currentStore].storeName);
+            
+            int len = strlen(stores[currentStore].storeName);
+            while(len > 0 && stores[currentStore].storeName[len-1] == ' ') {
+                stores[currentStore].storeName[len-1] = '\0';
+                len--;
+            }
+            continue;
+        }
+
+        Product temp;
+        if(sscanf(line,
+                "%d | %[^|] | PHP %f | Stock: %d",
+                &temp.id,
+                temp.name,
+                &temp.price,
+                &temp.stock)==4){
+
+            int len = strlen(temp.name);
+            while(len > 0 && temp.name[len-1] == ' ') {
+                temp.name[len-1] = '\0';
+                len--;
+            }
+
+            stores[currentStore].products[stores[currentStore].productCount++] = temp;
+        }
+    }
+    fclose(fp);
+}
+
 int main() {
 
 
 
 
-  return 0;  
+    return 0;  
 }
