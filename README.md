@@ -1,193 +1,170 @@
 # C_Prog2-VendingMachine
 
-A simple vending machine simulation project written in C for Programming 2. The program allows users to buy products, manage inventory and stock, track remaining balance from a ₱500 budget, and simulate vending machine operations using functions, arrays, structures, and file handling.
+A console-based **Multi-Store Vending Machine Simulation** written in
+**C** for Programming 2. The application simulates a vending machine
+system where users can purchase products from different stores, manage
+their shopping cart, cancel purchases, track their remaining cash, and
+maintain persistent inventory records through file handling.
 
----
+------------------------------------------------------------------------
 
 # Project Overview
 
-This project simulates a vending machine inside a school canteen. A student starts with ₱500 pocket money and may purchase products from the vending machine as long as there is enough balance and stock available.
+This project simulates a vending machine found in a school canteen that
+contains multiple stores. The user starts with **₱500** and can purchase
+products from any available store as long as there is sufficient balance
+and stock.
 
-The system stores and updates:
-- Product stock
-- Student inventory
-- Remaining money
+The program automatically updates and saves all transactions using text
+files, allowing data to persist even after the application closes.
 
-using text files through file handling in C.
+The system keeps track of:
 
----
+-   Available stores
+-   Product inventory
+-   Product stock
+-   User cash balance
+-   Purchased products
+-   Inventory records
+-   Final receipt
+
+------------------------------------------------------------------------
 
 # Features
 
-- View available vending machine products
-- Buy products with balance validation
-- Stock quantity checking
-- Inventory tracking
-- Remaining balance tracking
-- File handling for persistent data storage
-- Console-based menu system
-- Uses only standard C libraries:
-  - `stdio.h`
-  - `stdlib.h`
-  - `string.h`
+-   Multiple store support
+-   Product selection using Product ID
+-   Purchase products from different stores
+-   Automatic stock validation
+-   Cash balance validation
+-   Persistent cash tracking using `cash.txt`
+-   Persistent product inventory using `products.txt`
+-   Live inventory tracking using `inventory.txt`
+-   Shopping cart system
+-   Merge duplicate purchases automatically
+-   Purchase cancellation with partial quantity refunds
+-   Automatic stock restoration after cancellation
+-   Automatic inventory synchronization
+-   Receipt generation after transaction completion
+-   Runtime file reloading to reflect external file modifications
+-   Comprehensive input validation for menus, quantities, and product
+    selection
+-   Console-based user interface
 
----
+------------------------------------------------------------------------
 
 # Technologies Used
 
-- C Programming Language
-- File Handling
-- Structures
-- Arrays
-- Functions
-- Conditional Statements
-- Loops
+-   C Programming Language
+-   File Handling
+-   Structures
+-   Arrays
+-   Functions
+-   Loops
+-   Conditional Statements
+-   String Manipulation
+-   Standard C Libraries
+    -   `stdio.h`
+    -   `stdlib.h`
+    -   `string.h`
 
----
+------------------------------------------------------------------------
 
 # Project Structure
 
-```txt
+``` txt
 C_Prog2-VendingMachine/
 │
 ├── README.md
+├── cash.txt
+├── flowchart.drawio
 ├── inventory.txt
 ├── products.txt
 └── vendingMachine.c
 ```
 
----
+------------------------------------------------------------------------
 
-# How the Program Works
+# Program Workflow
 
-1. The program loads product data from `products.txt`
-2. The student starts with ₱500 balance
-3. The user chooses actions from the menu:
-   - View Products
-   - Buy Product
-   - View Inventory
-   - Exit
-4. Purchased products reduce stock quantity
-5. Student balance updates automatically
-6. Inventory and stock are saved using file handling
+1.  Load available stores and products from `products.txt`.
+2.  Load the user's available cash from `cash.txt`.
+3.  Display the list of available stores.
+4.  Allow the user to select stores, purchase products, view inventory,
+    and finish the transaction.
+5.  Validate stock, balance, and user input.
+6.  Save all updates immediately.
+7.  Allow purchase cancellation with refunds and stock restoration.
+8.  Generate a final receipt.
 
----
-
-# Sample Products
-
-| Product | Price | Stock |
-|---|---|---|
-| Chips | ₱25 | 10 |
-| Soda | ₱30 | 8 |
-| Candy | ₱15 | 12 |
-| Water | ₱20 | 15 |
-| Juice | ₱35 | 6 |
-
----
-
-# Sample Menu
-
-```txt
-===== VENDING MACHINE =====
-1. View Products
-2. Buy Product
-3. View Inventory
-4. Exit
-```
-
----
+------------------------------------------------------------------------
 
 # File Handling
 
-## products.txt
-Stores product information:
-- Product name
-- Price
-- Stock quantity
+## `products.txt`
 
-Example:
-```txt
-Chips 25 10
-Soda 30 8
-Candy 15 12
-Water 20 15
-Juice 35 6
-```
+Stores store names, product IDs, prices, and stock quantities.
 
----
+## `cash.txt`
 
-## inventory.txt
-Stores:
-- Remaining student money
-- Purchased product quantities
+Stores the user's remaining cash balance.
 
-Example:
-```txt
-500
-Chips 0
-Soda 0
-Candy 0
-Water 0
-Juice 0
-```
+## `inventory.txt`
 
----
+Stores purchased products, quantities, totals, starting cash, and
+remaining balance.
+
+------------------------------------------------------------------------
 
 # Compilation and Execution
 
-## Using GCC
+## Windows
 
-### Linux / macOS
-```bash
-gcc vending_machine.c -o vending
-./vending
-```
-
-### Windows
-```bash
-gcc vending_machine.c -o vending.exe
+``` bash
+gcc vendingMachine.c -o vending.exe
 vending.exe
 ```
 
----
+## Linux / macOS
+
+``` bash
+gcc vendingMachine.c -o vending
+./vending
+```
+
+------------------------------------------------------------------------
 
 # Learning Objectives
 
-This project demonstrates:
-- Flow control in C
-- Functions and modular programming
-- Arrays and strings
-- Structures
-- File handling
-- Inventory management logic
-- Console-based user interaction
+-   Modular programming
+-   Structures
+-   Arrays
+-   File handling
+-   Persistent storage
+-   String manipulation
+-   Input validation
+-   Inventory management
+-   Shopping cart logic
 
----
+------------------------------------------------------------------------
+
 # Developers
 
-This project was developed by:
+-   **Student 1:** intphilip \| Philip II Mendoza
+    https://github.com/intphilip
 
-- Student 1 : intphilip | Philip II Mendoza
-      https://github.com/intphilip
-    
-- Student 2 : jimbert0609 | Jimbert Catalan
-      https://github.com/Jimbert0609
-  
-- Student 3 : khanedith13 | Delfin Octobre
-      https://github.com/khanedith13
-  
----
+-   **Student 2:** jimbert0609 \| Jimbert Catalan
+    https://github.com/Jimbert0609
+
+-   **Student 3:** khanedith13 \| Delfin Octobre
+    https://github.com/khanedith13
+
+------------------------------------------------------------------------
 
 # Course Information
 
-**Course:** Programming 2  
-**Project:** Final Project – Vending Machine Simulation  
+**Course:** Programming 2
+
+**Project:** Final Project -- Multi-Store Vending Machine Simulation
+
 **Language:** C Programming
-
----
-
-# Notes
-
-- The program uses only standard C libraries.
-- Data is saved automatically using text files.
-- Compatible with basic C compilers and environments.
